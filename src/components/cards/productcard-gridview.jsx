@@ -183,7 +183,7 @@ const ProductCardGridView = ({ product, colClasses, wishListItems }) => {
             <Link
               className="text-black"
               // to={`http://localhost:5173/product/${product.id}`}
-              to={`https://ecommerce-django.netlify.app//product/${product.id}`}
+              to={`https://ecommerce-django.netlify.app/product/${product.id}`}
               style={{ textDecoration: "none" }}
             >
               <p className="card-text font-weight-light ">

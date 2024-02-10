@@ -51,7 +51,6 @@ const ProductCardListView = ({ product, colClasses, wishListItems }) => {
 
   return (
     <div className="row justify-content-center mb-3 ">
-      
       <div className={colClasses}>
         <div className="card shadow-0 border-0 rounded-4 shadow-sm">
           <div className="card-body">
