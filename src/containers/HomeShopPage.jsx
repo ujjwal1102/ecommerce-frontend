@@ -478,7 +478,7 @@ const HomeShopPage = () => {
                     <div className="card rounded-0  text-white border-0 zoom-card" >
                       <img
                         className="card-img rounded-0 p-2  bg-white border-0 h-100"
-                        src={`http://127.0.0.1:8000/media/${val.thumbnail_image}`}
+                        src={`https://ujjwal1102.pythonanywhere.com//media/${val.thumbnail_image}`}
                         alt="Card image"
                         style={{ maxHeight: "15rem", objectFit: "contain",height:"15rem" }}
                       />

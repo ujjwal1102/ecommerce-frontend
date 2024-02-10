@@ -60,7 +60,7 @@ const ProductCardListView = ({ product, colClasses, wishListItems }) => {
                 <div className="bg-image hover-zoom ripple rounded ripple-surface me-md-3 mb-3 mb-md-0">
                   {product.thumbnail_image ? (
                     <img
-                      src={`http://127.0.0.1:8000${
+                      src={`https://ujjwal1102.pythonanywhere.com${
                         product.thumbnail_image.startsWith("/") ? "" : "/media/"
                       }${product.thumbnail_image}`}
                       // className="img-responsive rounded-top-4 border-0"

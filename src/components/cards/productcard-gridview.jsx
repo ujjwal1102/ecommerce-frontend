@@ -95,7 +95,7 @@ const ProductCardGridView = ({ product, colClasses, wishListItems }) => {
       <div className="card w-100 my-2 shadow-sm product-card border-0 rounded-4">
         {product.thumbnail_image ? (
           <img
-            src={`http://127.0.0.1:8000${
+            src={`https://ujjwal1102.pythonanywhere.com${
               product.thumbnail_image.startsWith("/") ? "" : "/media/"
             }${product.thumbnail_image}`}
             className="rounded-top-4 border-0 p-1"
