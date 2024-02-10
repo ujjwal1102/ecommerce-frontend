@@ -127,7 +127,8 @@ const ProductCardListView = ({ product, colClasses, wishListItems }) => {
                   </div>
                   <Link
                     className="text-black"
-                    to={`http://localhost:5173/product/${product.id}`}
+                    // to={`http://localhost:5173/product/${product.id}`}
+                    to={`https://ujjwal1102.pythonanywhere.com/product/${product.id}`}
                     style={{ textDecoration: "none" }}
                   >
                     <p className="text small mt-lg-2 mt-md-2 mt-sm-1 mt-1 mb-1 text-muted">

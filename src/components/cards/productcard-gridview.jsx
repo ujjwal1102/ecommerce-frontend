@@ -182,7 +182,8 @@ const ProductCardGridView = ({ product, colClasses, wishListItems }) => {
           <div className="d-flex flex-row justify-content-between">
             <Link
               className="text-black"
-              to={`http://localhost:5173/product/${product.id}`}
+              // to={`http://localhost:5173/product/${product.id}`}
+              to={`https://ujjwal1102.pythonanywhere.com/product/${product.id}`}
               style={{ textDecoration: "none" }}
             >
               <p className="card-text font-weight-light ">
