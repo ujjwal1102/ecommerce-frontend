@@ -32,7 +32,7 @@ const Wishlist = () => {
                   {wislst.product.thumbnail_image ? (
                     <img
                       className="img-fluid w-100 rounded-4"
-                      src={`http://127.0.0.1:8000${wislst.product.thumbnail_image}`}
+                      src={`https://ujjwal1102.pythonanywhere.com${wislst.product.thumbnail_image}`}
                       alt="Sample"
                     />
                   ) : (

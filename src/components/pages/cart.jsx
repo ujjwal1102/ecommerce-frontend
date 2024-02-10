@@ -141,7 +141,7 @@ const Cart = () => {
                           <div className="me-lg-5">
                             <div className="d-flex">
                               <img
-                                src={`http://127.0.0.1:8000${item.thumbnail_image}`}
+                                src={`https://ujjwal1102.pythonanywhere.com${item.thumbnail_image}`}
                                 className="border rounded me-3"
                                 alt="Image"
                                 style={{ width: 96, height: 96 }}

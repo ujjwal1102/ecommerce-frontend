@@ -38,7 +38,8 @@ import ProductsShopPage from "./containers/ProductsShopPage";
 // import Cookies from "universal-cookie";
 import Cookies from "js-cookie";
 const client = axios.create({
-  baseURL: "http://127.0.0.1:8000",
+  // baseURL: "http://127.0.0.1:8000",
+  baseURL: "https://ujjwal1102.pythonanywhere.com/",
 });
 
 function App() {

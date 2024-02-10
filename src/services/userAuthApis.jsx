@@ -4,7 +4,8 @@ import { getAccessToken } from "./LocalStorageService";
 
 
 const client = axios.create({
-  baseURL: "http://127.0.0.1:8000",
+  // baseURL: "http://127.0.0.1:8000",
+  baseURL: "https://ujjwal1102.pythonanywhere.com/",
   // headers: {
   //   authorization: `Bearer ${localStorage.getItem('access_token')}`,
   // },
@@ -12,7 +13,8 @@ const client = axios.create({
 });
 
 const api = axios.create({
-  baseURL: "http://127.0.0.1:8000/",
+  // baseURL: "http://127.0.0.1:8000",
+  baseURL: "https://ujjwal1102.pythonanywhere.com/",
   // baseURL: `${process.env.DJANGO_BACKEND_URL}`,
   headers: {
     "Content-type": "application/json",
