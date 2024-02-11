@@ -156,7 +156,7 @@ const Header = ({ client, accessToken, setAccessToken }) => {
                           <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
                             <Link
                               className="nav-link p-0 my-auto text-white"
-                              to="/seller"
+                              to="/signup"
                             >
                               <p className="p-0 my-auto">Accounts Sign Up</p>
                             </Link>
@@ -164,7 +164,7 @@ const Header = ({ client, accessToken, setAccessToken }) => {
                           <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
                             <Link
                               className="nav-link p-0 my-auto text-white"
-                              to="/seller"
+                              to="/login"
                             >
                               <p className="p-0 my-auto">Login</p>
                             </Link>
