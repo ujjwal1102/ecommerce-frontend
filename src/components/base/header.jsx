@@ -153,7 +153,7 @@ const Header = ({ client, accessToken, setAccessToken }) => {
                       </li>
                       {accessToken === null ? (
                         <>
-                          <li className="nav-item  nav-link  d-sm-block d-md-block d-lg-none d-xl-none">
+                          <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
                             <Link
                               className="nav-link p-0 my-auto text-white"
                               to="/seller"
@@ -161,7 +161,7 @@ const Header = ({ client, accessToken, setAccessToken }) => {
                               <p className="p-0 my-auto">Accounts Sign Up</p>
                             </Link>
                           </li>
-                          <li className="nav-item  nav-link  d-sm-block d-md-block d-lg-none d-xl-none">
+                          <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
                             <Link
                               className="nav-link p-0 my-auto text-white"
                               to="/seller"
