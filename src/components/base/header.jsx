@@ -35,12 +35,15 @@ const Header = ({ client, accessToken, setAccessToken }) => {
 
   useEffect(() => {
     setAccessToken(getAccessToken());
-    Cookies.set("test","test")
-    console.log("Cookies htader: ",document.cookie)
+    Cookies.set("test", "test");
+    console.log("Cookies htader: ", document.cookie);
   }, [accessToken]);
 
   return (
-    <header className="py-1 text-center bg-black  text-white  border-transparent " style={{zIndex:3,width:"100%"}}>
+    <header
+      className="py-1 text-center bg-black  text-white  border-transparent "
+      style={{ zIndex: 3, width: "100%" }}
+    >
       <style
         dangerouslySetInnerHTML={{
           __html: `
@@ -109,7 +112,7 @@ const Header = ({ client, accessToken, setAccessToken }) => {
                 <nav className=" navbar navbar-expand-lg bg-transparent p-0 my-auto">
                   <div className="navbar-brand ">
                     <Link to={"/"}>
-                    <i className="fa-solid fa-house text-white ps-1 small"></i>
+                      <i className="fa-solid fa-house text-white ps-1 small"></i>
                     </Link>
                   </div>
 
@@ -148,57 +151,65 @@ const Header = ({ client, accessToken, setAccessToken }) => {
                           <p className="p-0 my-auto">Seller</p>
                         </Link>
                       </li>
-                      <li className="nav-item  nav-link d-none d-sm-block d-md-block d-lg-none d-xl-none">
-                        <Link
-                          className="nav-link p-0 my-auto text-white"
-                          to="/seller"
-                        >
-                          <p className="p-0 my-auto">Accounts Sign Up</p>
-                        </Link>
-                      </li>
-                      <li className="nav-item  nav-link d-none d-sm-block d-md-block d-lg-none d-xl-none">
-                        <Link
-                          className="nav-link p-0 my-auto text-white"
-                          to="/seller"
-                        >
-                          <p className="p-0 my-auto">Login</p>
-                        </Link>
-                      </li>
-
-                      <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                        <Link
-                          className="nav-link p-0 my-auto text-white"
-                          to="/cart"
-                        >
-                          <p className="p-0 my-auto">Cart</p>
-                        </Link>
-                      </li>
-                      <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                        <Link
-                          className="nav-link p-0 my-auto text-white"
-                          to="/wishlist"
-                        >
-                          <p className="p-0 my-auto">Wishlist</p>
-                        </Link>
-                      </li>
-                      <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                        <Link
-                          className="nav-link p-0 my-auto text-white"
-                          to="/profile"
-                        >
-                          <p className="p-0 my-auto">Profile</p>
-                        </Link>
-                      </li>
-                      <li className="nav-item  nav-link d-block d-sm-block d-md-none d-lg-none d-xl-none">
-                        <Link
-                          className="nav-link p-0 my-auto text-white"
-                          to="#"
-                          onClick={handleLogout}
-                        >
-                          <p className="p-0 my-auto">Logout</p>
-                        </Link>
-                      </li>
+                      {accessToken === null ? (
+                        <>
+                          <li className="nav-item  nav-link d-none d-sm-block d-md-block d-lg-none d-xl-none">
+                            <Link
+                              className="nav-link p-0 my-auto text-white"
+                              to="/seller"
+                            >
+                              <p className="p-0 my-auto">Accounts Sign Up</p>
+                            </Link>
+                          </li>
+                          <li className="nav-item  nav-link d-none d-sm-block d-md-block d-lg-none d-xl-none">
+                            <Link
+                              className="nav-link p-0 my-auto text-white"
+                              to="/seller"
+                            >
+                              <p className="p-0 my-auto">Login</p>
+                            </Link>
+                          </li>
+                        </>
+                      ) : (
+                        <>
+                          {" "}
+                          <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                            <Link
+                              className="nav-link p-0 my-auto text-white"
+                              to="/cart"
+                            >
+                              <p className="p-0 my-auto">Cart</p>
+                            </Link>
+                          </li>
+                          <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                            <Link
+                              className="nav-link p-0 my-auto text-white"
+                              to="/wishlist"
+                            >
+                              <p className="p-0 my-auto">Wishlist</p>
+                            </Link>
+                          </li>
+                          <li className="nav-item  nav-link d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                            <Link
+                              className="nav-link p-0 my-auto text-white"
+                              to="/profile"
+                            >
+                              <p className="p-0 my-auto">Profile</p>
+                            </Link>
+                          </li>
+                          <li className="nav-item  nav-link d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                            <Link
+                              className="nav-link p-0 my-auto text-white"
+                              to="#"
+                              onClick={handleLogout}
+                            >
+                              <p className="p-0 my-auto">Logout</p>
+                            </Link>
+                          </li>
+                        </>
+                      )}
                     </ul>
+
                     {/* <div className={`${isFocused ? "focused" : ""}`}>
                       <div className="myBody">
                         <div className="box">
@@ -259,7 +270,7 @@ const Header = ({ client, accessToken, setAccessToken }) => {
                           >
                             <button
                               className="btn btn-dark btn-outline-light rounded-3 mx-1 btn-sm d-flex align-items-center mx-1"
-                              target="_self" 
+                              target="_self"
                             >
                               <i
                                 className="fas fa-heart m-1 me-md-2 "
